@@ -1,0 +1,464 @@
+@font-face
+{
+    font-family: 'Belinda';
+    src:url("../fonts/Belinda/belinda.otf");
+    font-style: normal;
+}
+
+
+html, body
+{
+	margin: 0;
+    height: 100%;
+    font-family: sans-serif;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    font-size: 10px;
+}
+
+a
+{
+    text-decoration: none;
+    font-style: normal;
+}
+
+
+figure, ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li:nth-child(odd)
+{
+    background: white;
+}
+
+.flexContainer
+{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+}
+
+img, picture
+{
+    display: block;
+    max-width: 100%;
+}
+
+.hiddenText
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.wrapper
+{
+    height: 100%;
+    width: 100%;
+    max-width: 800px;
+    min-width: 640px;
+    margin: 0 auto;
+}
+
+.wrapper header
+{   
+    display: flex;
+    width: 100%;
+    background: url(../img/fir-tree.jpg) 0 0 no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    align-items:center;
+    color: white;
+}
+
+header nav
+{
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+section
+{  
+    flex: 1 0 auto;
+    background: #eeeeef;
+}
+
+footer
+{
+    background: #50c3af;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+footer h3
+{
+    margin: 4rem 0 4rem 0;
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'PT Sans';
+    cursor: default;
+}
+
+footer nav
+{
+    display: flex;
+    align-items:center;
+    padding-bottom: 6rem;
+    font-size: 2.6rem;
+}
+
+footer nav a
+{
+    margin: 0 2.5rem; 
+    color: #d5eee9;
+}
+
+footer nav a:hover
+{
+    color: #213948;
+}
+
+footer .TechCrunch
+{
+    font-family: 'Belinda';
+}
+
+footer .Promail
+{
+    font-family: 'PTSans';
+}
+
+footer .Mashable
+{
+    font-family: 'Cabin';
+}
+  
+footer .altaspix
+{
+    font-weight: 900;
+}    
+
+div.copyright
+{
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: white;
+    align-self:stretch;
+    justify-content: space-between;
+    padding: 0 9rem;
+    color: #bcbdbf;
+}
+
+div.copyright a
+{
+    color: #bcbdbf;
+    margin: 1.8rem 0.5rem;;
+}
+
+div.copyright a:hover
+{
+    color: #213948;
+    transition: 0.2s;
+}
+
+.button
+{
+    background-color: #50c3af;
+    font-family: 'PTSans';
+    border: none;
+    color: white;
+    padding: 1em 3em;
+    font-size: 1.5rem;
+    border-radius: 3em;
+    cursor: pointer;
+    margin-bottom: 11rem;
+}
+
+.button:hover
+{
+    background-color: #d2d5da;
+    color:#213948;
+    transition: 0.3s;
+}
+
+.uppercase
+{
+    text-transform: uppercase;
+}
+
+header
+{
+    cursor: default;
+}
+
+header nav a
+{   
+    font-size: 1.3em;
+    font-weight: 600;
+    color: white;
+    padding: 0 0.8rem;
+}
+
+.headerMenu a:hover,
+.headerMenu a:active
+{
+    background: white;
+    color:#50c3af;
+    border-radius: 50%;
+}
+
+header h2.name
+{
+    margin: 2.5rem 0 2.5rem 0;
+    text-transform: none;
+    font-size: 5.2em;
+    font-family: 'Belinda', cursive;
+    font-weight: 100;
+}
+
+header h1
+{
+    margin: 7rem 0 1.5rem 0;
+    font-size: 5.3em;
+    font-family: 'Ubuntu';
+    text-shadow: 0 0 0.3rem white;
+}
+
+header h3
+{
+    font-size: 1.5rem;
+    font-family: 'PTSans';
+    margin-bottom: 7rem;
+}
+
+.socialIcons i
+{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.linearGradientWhite
+{
+    height: 0.2rem;
+    background: linear-gradient(to right, #e9e9ea , white);
+}
+
+.linearGradienGrey
+{
+    height: 0.2rem;
+    background: linear-gradient(to right, #e2e3e4 , #eeeeef);
+}
+
+.text
+{
+    font-size: 1.4rem;
+    color: #787b80;
+    font-family: "PT Sans";
+    line-height: 2.2rem;
+}
+
+.mainLinks
+{
+    padding: 4rem 10rem 6rem 10rem;
+    justify-content: space-between;
+    cursor: default; 
+}
+
+.mainLinks div
+{
+    max-width: 31%;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'PT Sans';
+    align-self: flex-start;
+}
+
+.mainLinks a 
+{
+    width: 80%;
+    border-bottom: 0.2rem #e2e3e4 solid;
+}
+
+.mainLinks a:hover 
+{
+    border-color: #50c3af;
+    opacity: 0.9;
+}
+
+.mainLinks div a i
+{
+    font-size: 3.5rem;
+    color: #50c3af;
+}
+
+.mainLinks div a h4
+{
+    margin-top: 3.0rem 0 1.5rem 0;
+    font-size: 1.5rem;
+    color: #40474e;
+}
+
+.firstLineOfArticles
+{
+    justify-content: space-between;
+    align-content: center;
+    padding: 6.5rem 10rem 7.5rem 10rem;
+    font-family: 'PTSans';
+    cursor: default;
+}
+
+.firstLineOfArticles article
+{
+    max-width: 45.5%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+li .button
+{
+    width: 10rem;
+    align-self: left;
+    padding: 0.5em;
+    font-size: 1.4rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.firstLineOfArticles figcaption
+{
+    margin: 2.5rem auto;
+    font-size: 1.5rem;
+    color: #40474e;
+}
+
+.secondLineOfArticles 
+{
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    cursor: default;
+    padding: 6rem 10rem 6rem 10rem;
+}
+
+li article h3
+{
+    font-size: 1.7rem;
+    margin: 0 0 2rem 0;
+    color: #384048;
+}
+
+li article h3 i
+{
+    color:#c6cbd1;
+    margin-right: 1rem;
+}
+
+.secondLineOfArticles div+p
+{
+    padding-bottom: 1rem;
+    letter-spacing: 0.07rem;
+}
+
+.fifthLineOfArticles article>.button,
+.secondLineOfArticles article>.button
+{
+    background: #d2d5da;
+}
+
+.fifthLineOfArticles article>.button:hover,
+.secondLineOfArticles article>button:hover
+{
+    background: #50c3af;
+}
+
+.thirdLineOfArticles
+{
+    align-items: flex-start; 
+    justify-content: space-between;
+    padding: 5.5rem 10rem 6rem 10rem;
+    cursor: default;
+}
+
+.thirdLineOfArticles>article
+{
+    max-width: 31%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.thirdLineOfArticles a
+{
+    color: #50c3af;
+}
+
+.thirdLineOfArticles a:hover
+{
+    color: white;
+    background: #50c3af;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+}
+
+.thirdLineOfArticles h3
+{
+    font-size: 1.5rem;
+    color: #40474e;
+    font-weight: 700;
+    margin: 3rem 0 2rem 0;
+}
+
+.fourthLineOfArticles
+{
+    padding: 4.5rem 10rem 6.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fourthLineOfArticles article
+{
+    max-width: 46%;
+    align-self: flex-start;
+}
+
+.fifthLineOfArticles
+{
+    padding: 6rem 10rem 6rem;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.fifthLineOfArticles article
+{
+    min-width: 50%;
+    margin-left:2rem;
+}
+
+.fifthLineOfArticles picture
+{    
+    min-width: 45%;
+}
+
+.fifthLineOfArticles article h3
+{
+    margin-top:0;
+}
